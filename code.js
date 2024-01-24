@@ -2,9 +2,19 @@ function sum(a) {
     if (!Array.isArray(a)) {
         return 0;
     }
-    var s = 0;
-    for(var i = 0; i < a.length; i++) {
-        s += a[i];
+
+    if (a.length === 0) {
+        return 0;
     }
-    return s;
+
+    var sum = 0;
+    for (var i = 0; i < a.length; i++) {
+        sum += a[i];
+    }
+
+    if (isNaN(sum)) {
+        return 0;
+    }
+
+    return sum;
 }
