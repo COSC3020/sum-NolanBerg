@@ -9,12 +9,6 @@ const testSum =
         const expectedSum = arr.reduce((a, b) => a + b, 0);
         const actualSum = sum(arr);
 
-        if (actualSum !== expectedSum) {
-            console.log('Failing case:', arr);
-            console.log('Expected sum:', expectedSum);
-            console.log('Actual sum:', actualSum);
-        }
-
         return actualSum === expectedSum;
     });
 
