@@ -1,5 +1,5 @@
 function sum(a) {
-    if (a.length === 0) {
+    if (!Array.isArray(a)) {
         return 0;
     }
     var sum = 0;
