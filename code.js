@@ -11,10 +11,6 @@ function sum(a) {
     for (var i = 0; i < a.length; i++) {
         sum += a[i];
     }
-
-    if (isNaN(sum)) {
-        return 0;
-    }
-
+    
     return sum;
 }
