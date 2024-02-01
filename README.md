@@ -4,3 +4,17 @@
 The program to compute the sum of a list of numbers in `code.js` is incorrect
 (and the tests in `code.test.js` are failing). Correct the code such that it
 passes the tests.
+
+
+RESOURCES USED:  Originally coded the sum of list in python and asked chatgpt to convert to js. Below is python code to compute sum of list without testing
+
+import random
+
+random_integers = [random.randint(1, 10) for _ in range(5)]
+print(random_integers)
+
+sum = 0
+for num in random_integers:
+    sum += num
+
+print(sum)
