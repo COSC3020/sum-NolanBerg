@@ -17,6 +17,6 @@ sum = 0
 
 for num in random_integers:
 
-    sum += num
+   sum += num
 
 print(sum)
