@@ -1,11 +1,8 @@
-const fs = require('fs');
 const jsc = require('jsverify');
+const { sum } = require('./code'); 
 
-eval(fs.readFileSync('code.js')+'');
-
-const testSum =
-    jsc.forall("array nat", function(arr) {
-        return JSON.stringify(sum(arr)) == JSON.stringify(arr.reduce(function(a, b) { return a + b; }, 0));
-    });
+const testSum = jsc.forall("array nat", function (arr) {
+    return sum(arr) === arr.reduce((a, b) => a + b, 0);
+});
 
 jsc.assert(testSum);
