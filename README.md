@@ -6,7 +6,7 @@ The program to compute the sum of a list of numbers in `code.js` is incorrect
 passes the tests.
 
 
-RESOURCES USED:  Originally coded the sum of list in python and asked chatgpt to convert to js. Below is python code to compute sum of list without testing
+RESOURCES USED:  Originally coded the sum of list in python and asked chatgpt to convert to js where sum function takes in array and adds elements together. Below is python code to compute sum of list without testing
 
 import random
 
