@@ -11,6 +11,7 @@ RESOURCES USED:  Originally coded the sum of list in python and used ai to conve
 import random
 
 random_integers = [random.randint(1, 10) for _ in range(5)]
+
 print(random_integers)
 
 sum = 0
